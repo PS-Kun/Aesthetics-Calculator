@@ -1,0 +1,165 @@
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    z-index: 500;
+}
+
+.cursor{
+    background-image: url(./images/apple-blossom-146848_1280.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: 500;
+    height: 50px;
+    width: 50px;
+    /* background-color: black; */
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.page1{
+    height: 50vh;
+    width: 100vw;
+    overflow-x:hidden;
+    position: relative;
+}
+
+.page1 .heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;;
+    text-align: center;
+    color:antiquewhite;
+}
+
+.page1-5{
+
+    height: 25vh;
+    width: 100vw;
+    position: relative;
+    background-image: url(./images/cherry-blossom-6516.jpg);
+    opacity: 0.9;
+    
+
+}
+
+.page1-5 .text{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: rgb(252, 111, 111);
+    background: rgba(red, green, blue, 0.2);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+
+
+}
+
+.page2 video{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* like background-size: cover */
+  object-position: center;
+  opacity: 0.8;
+
+}
+
+.page1 video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* like background-size: cover */
+  object-position: center;
+  opacity: 0.6;
+  
+}
+
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x:hidden;
+    position: relative;
+   
+}
+.calculator{
+    background-color: pink;
+    border-radius:30px;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: -5px 5px 10px palevioletred inset,
+                  5px -5px 10px palevioletred inset;
+
+}
+.calculator form input{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: -5px 5px 10px palevioletred,
+                  5px -5px 10px palevioletred;
+    transition: transform 0.3 ease;            
+}
+
+.calculator form input:active:not(.result) {
+    transform: scale(0.9);
+}
+
+
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    transition: none;
+}
+form .display input{
+    text-align: right;
+    box-shadow: none;
+    font-size: 45px;
+    flex:1;
+    background: rgb(197, 196, 196);
+    transition: none;
+}  
+#equal{
+    width: 145px;
+    
+}

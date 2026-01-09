@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+  <div class="main">
+  <div class="cursor"></div>
+  <audio src="./audio/mouse-click-290204.mp3"></audio>
+    <div class="page1">
+        <video id="myVideo"  preload="auto"muted autoplay loop playsinline>
+         <source src="./videos/page1.mp4" type="video/mp4">
+        </video>
+        <div class="heading">WELCOME TO THE AESTHETICS</div>
+
+    </div>
+
+    <div class="page1-5">
+      <div class="text">CALCULATOR</div>
+    </div>
+
+
+    <div class="container page2">
+        <video  preload="auto"muted autoplay loop playsinline>
+  <source src="./videos/page2.mp4" type="video/mp4">
+</video>
+
+        <div class="calculator">
+            <form >
+                <div class="display">
+                    <input class="result" type="text" name="display">
+                </div>
+                <div>
+                    <input class="btns" type="button" value="AC" onclick="display.value = ''">
+                    <input class="btns" type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input class="btns" type="button" value="." onclick="display.value += '.'">
+                    <input class="btns" type="button" value="/" onclick="display.value += '/'">
+                </div>
+                  <div>
+                    <input class="btns" type="button" value="7" onclick="display.value += '7'">
+                    <input class="btns" type="button" value="8" onclick="display.value += '8'">
+                    <input class="btns" type="button" value="9" onclick="display.value += '9'">
+                    <input class="btns" type="button" value="*" onclick="display.value += '*'">
+                </div>
+                  <div>
+                    <input class="btns" type="button" value="4" onclick="display.value += '4'">
+                    <input class="btns" type="button" value="5" onclick="display.value += '5'">
+                    <input class="btns" type="button" value="6" onclick="display.value += '6'">
+                    <input class="btns" type="button" value="-" onclick="display.value += '-'">
+                  </div>
+                      <div>
+                    <input class="btns" type="button" value="1" onclick="display.value += '1'">
+                    <input class="btns" type="button" value="2" onclick="display.value += '2'">
+                    <input class="btns" type="button" value="3" onclick="display.value += '3'">
+                    <input class="btns" type="button" value="+" onclick="display.value += '+'">
+                </div>
+                  <div>
+                    <input class="btns" type="button" value="00" onclick="display.value += '00'">
+                    <input class="btns" type="button" value="0" onclick="display.value += '0'">
+                    <input class="btns" id="equal" type="button" value="=" onclick="display.value= eval(display.value)">
+                   
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    
+    <div class="page4"></div>
+    </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./calc.js"></script>
+</body>
+</html>
